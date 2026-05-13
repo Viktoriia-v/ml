@@ -1,0 +1,48 @@
+# --- Core data / ML ---
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+xgboost>=2.0
+
+# --- Deep learning ---
+torch>=2.1
+transformers>=4.46     # `eval_strategy` + `processing_class` API
+datasets>=2.18
+accelerate>=0.27
+sentencepiece>=0.1.99
+tokenizers>=0.15
+
+# --- Embeddings (BiLSTM) ---
+gensim>=4.3        # FastText loader
+# Alternative: huggingface-hub for cc.<lang>.300.bin
+
+# --- Explainability ---
+shap>=0.44
+lime>=0.2.0.1
+captum>=0.7        # for transformers integrated gradients
+bertviz>=1.4       # attention visualization
+
+# --- Tokenizers / language tools ---
+jieba>=0.42        # Chinese segmentation
+pymorphy3>=2.0     # Russian morphology (optional)
+pymorphy3-dicts-uk>=2.4  # Ukrainian dictionary
+nltk>=3.8
+
+# --- LLM ---
+openai>=1.30        # OpenRouter is OpenAI-compatible
+anthropic>=0.30     # optional, if user wants direct Anthropic
+python-dotenv>=1.0
+
+# --- Notebooks / viz ---
+jupyter>=1.0
+matplotlib>=3.7
+seaborn>=0.13
+plotly>=5.18
+
+# --- Tracking (optional) ---
+wandb>=0.16
+
+# --- Utilities ---
+tqdm>=4.66
+pyyaml>=6.0
+click>=8.1

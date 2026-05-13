@@ -1,0 +1,68 @@
+# --- Secrets ---
+.env
+*.key
+
+# --- Data (raw + processed) ---
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.csv.gz
+*.parquet
+*.zip
+*.tar.gz
+
+# --- Models / artifacts ---
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+runs/
+wandb/
+
+# --- HuggingFace cache ---
+.cache/
+~/.cache/huggingface/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.installed.cfg
+
+# --- Virtual envs ---
+.venv/
+venv/
+env/
+.python-version
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Test / coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# --- Big result files (keep tables/PNGs, drop raw) ---
+results/raw_predictions/
